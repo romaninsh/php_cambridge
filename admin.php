@@ -32,7 +32,8 @@ class TestClient extends \atk4\data\Model {
 }
 
 session_start();
-$db = new \atk4\data\Persistence_Array($_SESSION);
+//$db = new \atk4\data\Persistence_Array($_SESSION);
+$app->dbConnect('mysql://b170960c7eb1b9:6634cdf5@eu-cdbr-west-02.cleardb.net/heroku_8f1048a1bb68a21');
 
-$app->add(['CRUD', 'paginator'=>false])->setModel(new TestClient($db, 'test-client'));
+//$app->add(['CRUD', 'paginator'=>false])->setModel(new TestClient($db, 'test-client'));
 
