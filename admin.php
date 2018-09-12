@@ -41,8 +41,8 @@ class Product extends \atk4\data\Model
 
 
         // Extra Relations
-        //$this->hasMany('Purchases', new Purchase());
-        //$this->hasMany('Orders', new Order());
+        $this->hasMany('Purchases', new Purchase());
+        $this->hasMany('Orders', new Order());
 
         //$this->getRef('Purchases')->addField('total_purchased', ['aggregate' => 'sum', 'field' => 'quantity']);
         //$this->getRef('Orders')->addField('total_sold', ['aggregate' => 'sum', 'field' => 'shipped']);
@@ -67,7 +67,7 @@ class Purchase extends \atk4\data\Model
         $this->addField('date', ['type' => 'date']);
 
         //$this->addExpression('title', ['concat([product_name], "-", [quantity])', 'type' => 'text']);
-        //$this->hasOne('product_id', new Product())->addTitle();
+        $this->hasOne('product_id', new Product())->addTitle();
         //$this->getRef('product_id')->addField('product_name', 'name');
 
     }
@@ -87,7 +87,7 @@ class Order extends \atk4\data\Model
         $this->addField('date', ['type' => 'date']);
         $this->addField('status', ['enum' => ['draft', 'paid', 'shipped'], 'required' => true, 'default' => 'draft']);
 
-        //$this->hasOne('product_id', new Product())->addTitle();
+        $this->hasOne('product_id', new Product())->addTitle();
         //$this->getRef('product_id')->addField('product_name', 'name');
     }
 }
@@ -96,5 +96,9 @@ session_start();
 //$db = new \atk4\data\Persistence_Array($_SESSION);
 $app->dbConnect('mysql://b170960c7eb1b9:6634cdf5@eu-cdbr-west-02.cleardb.net/heroku_8f1048a1bb68a21');
 
-$app->add(['CRUD', 'paginator'=>false])->setModel(new Product($app->db));
-
+$app->add(new \atk4\mastercrud\MasterCRUD())
+    ->setModel(
+        new Product($app->db),
+        ['Purchases'=>[], 'Orders'=>[]]
+    
+    );

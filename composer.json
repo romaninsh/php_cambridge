@@ -1,5 +1,6 @@
 {
   "require":{
-    "atk4/ui": "^1.2"
+    "atk4/ui": "^1.2",
+    "atk4/mastercrud": "^1.0"
   }
 }
