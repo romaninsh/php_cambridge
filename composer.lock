@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "7bee05b5fa1190dbf763b7ecdcb77789",
@@ -58,16 +58,16 @@
         },
         {
             "name": "atk4/data",
-            "version": "1.3.5",
+            "version": "1.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/atk4/data.git",
-                "reference": "1bfb1d0306ebbf619fdf06e22fbe1566e8819419"
+                "reference": "7e429ee497243fdc4a3dc8d22f60716fd730b7f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atk4/data/zipball/1bfb1d0306ebbf619fdf06e22fbe1566e8819419",
-                "reference": "1bfb1d0306ebbf619fdf06e22fbe1566e8819419",
+                "url": "https://api.github.com/repos/atk4/data/zipball/7e429ee497243fdc4a3dc8d22f60716fd730b7f2",
+                "reference": "7e429ee497243fdc4a3dc8d22f60716fd730b7f2",
                 "shasum": ""
             },
             "require": {
@@ -111,20 +111,20 @@
                 "query",
                 "sql"
             ],
-            "time": "2018-05-15T14:21:38+00:00"
+            "time": "2018-08-16T07:49:46+00:00"
         },
         {
             "name": "atk4/dsql",
-            "version": "1.2.4",
+            "version": "1.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/atk4/dsql.git",
-                "reference": "45620531e0a8ec80d15054a7fb72a11f0064a840"
+                "reference": "7f85985fdffae6c1539704de935544eda00d5151"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atk4/dsql/zipball/45620531e0a8ec80d15054a7fb72a11f0064a840",
-                "reference": "45620531e0a8ec80d15054a7fb72a11f0064a840",
+                "url": "https://api.github.com/repos/atk4/dsql/zipball/7f85985fdffae6c1539704de935544eda00d5151",
+                "reference": "7f85985fdffae6c1539704de935544eda00d5151",
                 "shasum": ""
             },
             "require": {
@@ -165,20 +165,20 @@
                 "orm",
                 "sql"
             ],
-            "time": "2018-05-14T09:43:38+00:00"
+            "time": "2018-08-16T07:47:00+00:00"
         },
         {
             "name": "atk4/ui",
-            "version": "1.5.1",
+            "version": "1.5.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/atk4/ui.git",
-                "reference": "dad8054505c924afdea9f9c76ecac7741b89babf"
+                "reference": "7001b9fcc8608f17a99bd94ae2cb4ef787da1f81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atk4/ui/zipball/dad8054505c924afdea9f9c76ecac7741b89babf",
-                "reference": "dad8054505c924afdea9f9c76ecac7741b89babf",
+                "url": "https://api.github.com/repos/atk4/ui/zipball/7001b9fcc8608f17a99bd94ae2cb4ef787da1f81",
+                "reference": "7001b9fcc8608f17a99bd94ae2cb4ef787da1f81",
                 "shasum": ""
             },
             "require": {
@@ -227,7 +227,7 @@
                 "web",
                 "widget"
             ],
-            "time": "2018-05-22T21:02:26+00:00"
+            "time": "2018-08-16T08:21:08+00:00"
         },
         {
             "name": "psr/log",
